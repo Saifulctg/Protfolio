@@ -19,10 +19,10 @@ $(function () {
    // Smooth Scroll Code End
 
    // Menu Active Code Start
-   $('#mainMenu ul li a').on('click', function () {
-      $('#mainMenu ul li a').removeClass('active')
-      $(this).addClass('active')
-   })
+   // $('#mainMenu ul li a').on('click', function () {
+   //    $('#mainMenu ul li a').removeClass('active')
+   //    $(this).addClass('active')
+   // })
    // Menu Active Code End
 
    // Header Fixed Code Start

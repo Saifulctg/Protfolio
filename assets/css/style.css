@@ -32,15 +32,17 @@ body{
 /* common Css End */
 
 /* header Css Start */
-#header {
+/* #header {
     right: 0;
     position: absolute;
     top: 0;
     left: 0;
+} */
+#header{
+    background-color: #555555;
 }
-
 #header .navbar-toggler {
-    color: #fff;
+    color: #ffffff;
 }
 
 #header .navbar-toggler:focus {
@@ -67,9 +69,9 @@ body{
 #mainMenu ul li a:hover {
     color: #e2b554;
 }
-#mainMenu ul li a.active {
+/* #mainMenu ul li a.active {
     color: #e2b554;
- }
+ } */
 
 
 #mainMenu ul li a::before{
@@ -95,7 +97,7 @@ body{
     -o-transform: scaleX(0);
 }
 
-#mainMenu ul li a:hover:before,
+/* #mainMenu ul li a:hover:before,
 #mainMenu ul li a.active:before{
     visibility: visible;
     opacity: 1;
@@ -104,7 +106,7 @@ body{
     -moz-transform: scaleX(1);
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
-}
+} */
 .header_fixed {
     width: 100%;
     position: fixed !important;
@@ -112,10 +114,7 @@ body{
     left: 0;
     right: 0;
     background-color: #555555;
-    
-}
-.menu_fixed{
-    color: #333333;
+    z-index: 999999;
 }
 
 
@@ -196,7 +195,7 @@ body{
     background-color: #fff;
 }
 
-.bannerContent .scroll a {
+/* .bannerContent .scroll a {
     position: absolute;
     bottom: 80px;
     left: 50%;
@@ -253,7 +252,7 @@ body{
     100% {
         opacity: 0;
     }
-}
+} */
 
 /* banner Css End */
 
