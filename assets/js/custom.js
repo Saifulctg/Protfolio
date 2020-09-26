@@ -19,10 +19,10 @@ $(function () {
    // Smooth Scroll Code End
 
    // Menu Active Code Start
-   // $('#mainMenu ul li a').on('click', function () {
-   //    $('#mainMenu ul li a').removeClass('active')
-   //    $(this).addClass('active')
-   // })
+   $('#mainMenu ul li a').on('click', function () {
+      $('#mainMenu ul li a').removeClass('active')
+      $(this).addClass('active')
+   })
    // Menu Active Code End
 
    // Header Fixed Code Start
@@ -30,13 +30,14 @@ $(function () {
 
    $(window).on('scroll',function(){
      var scrollSize = $(window).scrollTop()
-     if(headerOffset < scrollSize){
+     if(100 < scrollSize){
        $('#header').addClass('header_fixed')
-       $('##mainMenu ul li a').addClass('menu_fixed')
-       $('body').css('margin-top','80px');
+       $('#header').css('height','70px')
+       $('body').css('margin-top','70px');
+
      }else{
        $('#header').removeClass('header_fixed')
-       $('##mainMenu ul li a').removeClass('menu_fixed')
+       $('#header').css('height','100px')
        $('body').css('margin-top','0');
      }
      
