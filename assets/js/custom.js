@@ -30,7 +30,7 @@ $(function () {
 
    $(window).on('scroll',function(){
      var scrollSize = $(window).scrollTop()
-     if(100 < scrollSize){
+     if(300 < scrollSize){
        $('#header').addClass('header_fixed')
        $('#header').css('height','70px')
        $('body').css('margin-top','70px');
@@ -130,5 +130,30 @@ $(function () {
       time: 2000
   });
    // Counter Up Code End
+
+   // Back To Top Button Code Start
+   $(window).on('scroll',function(){
+
+      var scrollSize = $(window).scrollTop()
+
+      if(scrollSize>800){
+         $('.back_to_top_button').show(1000)
+
+      }else{
+         $('.back_to_top_button').hide(1000)
+      }
+      
+   })
+   $('.back_to_top_button').on('click',function(){
+      $('body,html').animate({
+         scrollTop:0
+      },2000);
+   })
+   
+   // Back To Top Button Code End
+
+   // Wow Animated Code Start 
+   new WOW().init();
+   // Wow Animated Code End 
 
 })
